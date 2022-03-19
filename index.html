@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="flex header">
+        <h1 id="title">Restaurant Survey Form</h1>
+        <p id="description">Please let us know how was the food and service.</p>
+    </header>
+    <main>
+        <form action="" id="survey-form" class="flex">
+            <div class="flex box radio-sect">
+                <div>
+                    <p>Dine in/ Dine out</p>
+                    <input type="radio" name="order" value="in">
+                    <label for="in">Dine in</label>
+                </div>
+                <div>
+                    <input type="radio" name="order" value="out">
+                    <label for="out">Dine out</label>
+                </div>
+            </div>
+            <div class="flex box radio-sect">
+                <div>
+                    <p>Food Quality</p>
+                    <input type="radio" name="quality" value="excellent">
+                    <label for="excellent">Excellent</label>
+                </div>
+                <div>
+                    <input type="radio" name="quality" value="good">
+                    <label for="good">Good</label>
+                </div>
+                <div>
+                    <input type="radio" name="quality" value="average">
+                    <label for="average">average</label>
+                </div>
+                <div>
+                    <input type="radio" name="quality" value="dissatisfied">
+                    <label for="dissatisfied">dissatisfied</label>
+                </div>
+            </div>
+            <div class="flex box radio-sect">
+                <div>
+                    <p>Cleanliness</p>
+                    <input type="radio" name="cleanliness" value="excellent">
+                    <label for="excellent">Excellent</label>
+                </div>
+                <div>
+                    <input type="radio" name="cleanliness" value="good">
+                    <label for="good">Good</label>
+                </div>
+                <div>
+                    <input type="radio" name="cleanliness" value="average">
+                    <label for="average">average</label>
+                </div>
+                <div>
+                    <input type="radio" name="cleanliness" value="dissatisfied">
+                    <label for="dissatisfied">dissatisfied</label>
+                </div>
+            </div>
+            <div class="flex box radio-sect">
+                <div>
+                    <p>Speed of Service</p>
+                    <input type="radio" name="speed" value="excellent">
+                    <label for="excellent">Excellent</label>
+                </div>
+                <div>
+                    <input type="radio" name="speed" value="good">
+                    <label for="good">Good</label>
+                </div>
+                <div>
+                    <input type="radio" name="speed" value="average">
+                    <label for="average">average</label>
+                </div>
+                <div>
+                    <input type="radio" name="speed" value="dissatisfied">
+                    <label for="dissatisfied">dissatisfied</label>
+                </div>
+            </div>
+            <div class="flex box radio-sect">
+                <div>
+                    <p>Would you recommend this place to a friend?</p>
+                    <input type="radio" name="recommend" value="definitely">
+                    <label for="definitely">Definitely</label>
+                </div>
+                <div>
+                    <input type="radio" name="recommend" value="Maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input type="radio" name="recommend" value="not-sure">
+                    <label for="not-sure">Not Sure</label>
+                </div>
+            </div>
+            <div class="flex box user-info">
+                <label for="day">Day Visited</label>
+                <input type="date" id="day">
+                <!-- <input type="day" name="" id=""> -->
+                <hr>
+                <!-- NAME BOX -->
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name Here">
+                <label for="name" class="subtext">optional</label>
+                <!-- EMAIL BOX -->
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="example@example.com">
+                <label for="name" class="subtext">optional</label>
+                <!-- NUMBER AGE BOX -->
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" min="10" max="99" placeholder="Age">
+                <label for="name" class="subtext">optional</label>
+                <hr>
+            </div>
+            <div class="flex box">
+                <p>Any other feedback that you would like to give ?</p>
+                <textarea></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
